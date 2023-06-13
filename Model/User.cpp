@@ -19,6 +19,10 @@ void User::SetUserId(int userId)
 {
     this->userId = userId;
 }
+void User::AddUserTask(Task *task)
+{
+    this->userTasks.push_back(task);
+}
 
 // Getting User Property
 std::string User::GetUserName()
@@ -29,11 +33,6 @@ std::string User::GetUserName()
 int User::GetUserId()
 {
     return this->userId;
-}
-
-void User::AddUserTask(Task *task)
-{
-    this->userTasks.push_back(task);
 }
 
 std::vector<Task *> User::GetUserTasks()
