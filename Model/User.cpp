@@ -30,3 +30,13 @@ int User::GetUserId()
 {
     return this->userId;
 }
+
+void User::AddUserTask(Task *task)
+{
+    this->userTasks.push_back(task);
+}
+
+std::vector<Task *> User::GetUserTasks()
+{
+    return this->userTasks;
+}
