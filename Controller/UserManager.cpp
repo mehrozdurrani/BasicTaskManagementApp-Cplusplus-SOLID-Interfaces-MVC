@@ -13,6 +13,17 @@ void UserManager::CreateNewUser(std::string userName, int userId)
 }
 bool UserManager::UpdateUser(int userId, std::string userName)
 {
+    // Find user from users list and change name of the user
+    std::cout << "Update user of ID: " << userId << "\n";
 }
-User *UserManager::FindUserById(int userId) const {}
-void UserManager::DeleteUser() {}
+User *UserManager::FindUserById(int userId) const
+{
+    // Find User
+    std::cout << "Find User of ID: " << userId << "\n";
+}
+void UserManager::DeleteUser(int userId)
+{
+
+    // Delete User
+    std::cout << "Delete user of ID: " << userId << "\n";
+}
