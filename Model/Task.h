@@ -4,7 +4,6 @@
 class Task
 {
 private:
-    /* data */
     std::string title;
     std::string dueDate;
     std::string priority;
