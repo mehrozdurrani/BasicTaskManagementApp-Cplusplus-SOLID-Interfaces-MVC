@@ -16,11 +16,3 @@ public:
     std::string GetUserName();
     int GetUserId();
 };
-
-User::User(/* args */)
-{
-}
-
-User::~User()
-{
-}
