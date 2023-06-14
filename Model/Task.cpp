@@ -11,6 +11,10 @@ Task::~Task()
 {
 }
 
+void Task::SetTaskId(int taskId)
+{
+    this->taskId = taskId;
+}
 void Task::SetTitle(std::string title)
 {
     this->title = title;
@@ -29,6 +33,10 @@ void Task::SetStatus(std::string status)
 }
 
 // Getting Properties
+int Task::GetTaskId()
+{
+    return this->taskId;
+}
 std::string Task::GetTitle()
 {
     return this->title;

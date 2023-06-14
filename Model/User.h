@@ -5,13 +5,12 @@
 class User
 {
 private:
-    /* data */
     std::string userName;
     int userId;
     std::vector<Task *> userTasks;
 
 public:
-    User(/* args */);
+    User();
     ~User();
     void SetUserName(std::string userName);
     void SetUserId(int userId);
