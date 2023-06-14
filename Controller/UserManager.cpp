@@ -27,13 +27,7 @@ void UserManager::DeleteUser(int userId)
     // Delete User
     std::cout << "Delete user of ID: " << userId << "\n";
 }
-
 std::vector<User *> UserManager::GetAllUsers()
 {
     return users;
-}
-
-void UserManager::AssignTaskToUser(Task *task, User *user)
-{
-    user->GetUserTasks().push_back(task);
 }
