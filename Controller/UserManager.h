@@ -13,6 +13,7 @@ public:
     User *FindUserById(int userId) const override;
     void DeleteUser(int userId) override;
     std::vector<User *> GetAllUsers() override;
+    void AssignTaskToUser(Task *task, User *user);
 
 private:
     std::vector<User *> users;

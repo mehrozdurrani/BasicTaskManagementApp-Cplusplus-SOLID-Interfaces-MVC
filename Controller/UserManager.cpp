@@ -32,3 +32,8 @@ std::vector<User *> UserManager::GetAllUsers()
 {
     return users;
 }
+
+void UserManager::AssignTaskToUser(Task *task, User *user)
+{
+    user->GetUserTasks().push_back(task);
+}

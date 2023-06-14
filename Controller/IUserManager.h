@@ -10,4 +10,5 @@ public:
     virtual User *FindUserById(int userId) const = 0;
     virtual std::vector<User *> GetAllUsers() = 0;
     virtual void DeleteUser(int userId) = 0;
+    virtual void AssignTaskToUser(Task *task, User *user) = 0;
 };
