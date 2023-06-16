@@ -10,7 +10,7 @@ public:
     ~Team();
     void SetTeamId(int teamId);
     int GetTeamId();
-    void SetTeamName(std::string name);
+    void SetTeamName(std::string teamName);
     std::string GetTeamName();
     std::vector<User *> GetTeamMembersList();
 

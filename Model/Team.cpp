@@ -12,9 +12,9 @@ int Team::GetTeamId()
 {
     return this->teamId;
 }
-void Team::SetTeamName(std::string name)
+void Team::SetTeamName(std::string teamName)
 {
-    this->teamName = name;
+    this->teamName = teamName;
 }
 std::string Team::GetTeamName()
 {

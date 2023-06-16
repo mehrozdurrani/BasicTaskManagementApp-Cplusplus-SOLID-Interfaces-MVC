@@ -5,7 +5,8 @@
 class ITeamManager
 {
 public:
-    virtual void CreateTeam();
-    virtual void AddMemberToTeam(User *user, Team *team);
-    virtual void RemoveMemberFromTeam(User *user, Team *team);
+    virtual Team *CreateTeam(int teamId, std::string teamName) = 0;
+    virtual Team *FindTeam(int teamId);
+    virtual void AddMemberToTeam(User *user, Team *team) = 0;
+    virtual void RemoveMemberFromTeam(User *user, Team *team) = 0;
 };
