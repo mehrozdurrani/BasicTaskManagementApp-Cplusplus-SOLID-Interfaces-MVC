@@ -6,12 +6,23 @@ Team *TeamManager::CreateTeam(int teamId, std::string teamName)
 
     team->SetTeamId(teamId);
     team->SetTeamName(teamName);
+
+    this->teams.push_back(team);
 }
 
 Team *TeamManager::FindTeam(int teamId)
 {
     // Find Team Id of the ID teamId amd return
     return nullptr;
+}
+
+void TeamManager::RemoveTeam(int teamId)
+{
+    // team will be removed from the list teams here
+}
+std::vector<Team *> TeamManager::GetAllTeams()
+{
+    return this->teams;
 }
 
 void TeamManager::AddMemberToTeam(User *user, Team *team)
