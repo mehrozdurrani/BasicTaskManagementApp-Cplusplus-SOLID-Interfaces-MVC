@@ -6,7 +6,7 @@ Team::~Team() {}
 
 void Team::SetTeamId(int teamId)
 {
-    this->teamId = id
+    this->teamId = teamId;
 }
 int Team::GetTeamId()
 {
