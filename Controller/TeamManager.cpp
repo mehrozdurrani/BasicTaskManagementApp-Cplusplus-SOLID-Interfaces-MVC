@@ -1,13 +1,12 @@
 #include "TeamManager.h"
 
-Team *TeamManager::CreateTeam(int teamId, std::string teamName)
+Team *TeamManager::CreateNewTeam(int teamId, std::string teamName)
 {
     Team *team = new Team();
-
     team->SetTeamId(teamId);
     team->SetTeamName(teamName);
-
     this->teams.push_back(team);
+    return team;
 }
 
 Team *TeamManager::FindTeam(int teamId)

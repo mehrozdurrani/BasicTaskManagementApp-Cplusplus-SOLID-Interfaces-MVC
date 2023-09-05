@@ -19,7 +19,6 @@ public:
     void SetDueDate(std::string date);
     void SetPriority(std::string priority);
     void SetStatus(std::string status);
-
     int GetTaskId();
     std::string GetTitle();
     std::string GetDueDate();

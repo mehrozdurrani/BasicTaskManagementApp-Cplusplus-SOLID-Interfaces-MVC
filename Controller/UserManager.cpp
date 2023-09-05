@@ -3,13 +3,13 @@
 UserManager::UserManager() {}
 UserManager::~UserManager() {}
 
-void UserManager::CreateNewUser(std::string userName, int userId)
+User *UserManager::CreateNewUser(int userId, std::string userName)
 {
     User *user = new User();
     user->SetUserId(userId);
     user->SetUserName(userName);
-
     users.push_back(user);
+    return user;
 }
 bool UserManager::UpdateUser(int userId, std::string userName)
 {

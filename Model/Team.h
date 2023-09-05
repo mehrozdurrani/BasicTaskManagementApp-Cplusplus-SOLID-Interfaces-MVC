@@ -17,5 +17,5 @@ public:
 private:
     int teamId;
     std::string teamName;
-    std::vector<User *> users; // ## when it doesnt violate the Dpendency Inversion Principle
+    std::vector<User *> users; // ## when it doesnt violate the Dependency Inversion Principle
 };

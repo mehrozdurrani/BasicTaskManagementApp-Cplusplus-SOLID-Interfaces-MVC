@@ -2,10 +2,11 @@
 #include <iostream>
 #include "Team.h"
 
+// Team Conract/ Interface
 class ITeamManager
 {
 public:
-    virtual Team *CreateTeam(int teamId, std::string teamName) = 0;
+    virtual Team *CreateNewTeam(int teamId, std::string teamName) = 0;
     virtual Team *FindTeam(int teamId) = 0;
     virtual void RemoveTeam(int teamId) = 0;
     virtual std::vector<Team *> GetAllTeams() = 0;
