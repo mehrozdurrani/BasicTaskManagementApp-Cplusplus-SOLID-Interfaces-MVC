@@ -13,7 +13,6 @@ private:
 public:
     Task();
     ~Task();
-
     void SetTaskId(int taskId);
     void SetTitle(std::string title);
     void SetDueDate(std::string date);
