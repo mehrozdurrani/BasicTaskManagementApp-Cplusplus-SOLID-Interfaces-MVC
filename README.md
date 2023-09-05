@@ -62,3 +62,6 @@ To compile and run the application, follow these steps:
 3. Compile the code:
 
 ```Main.cpp``` is the entry point.
+
+## Contact
+if you have any questions or suggestions, feel free to contact me at mehrozdurrani@gmail.com
