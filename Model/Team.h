@@ -8,14 +8,14 @@ class Team
 public:
     Team();
     ~Team();
-
-    void SetTeamName(std::string name);
-    void AddTeamMember(User *user);
-    void RemoveTeamMember(User *user);
-    std::vector<User *> GetTeamMembersList();
+    void SetTeamId(int teamId);
+    int GetTeamId();
+    void SetTeamName(std::string teamName);
     std::string GetTeamName();
+    std::vector<User *> GetTeamMembersList();
 
 private:
+    int teamId;
     std::string teamName;
-    std::vector<User *> users; // ## when it doesnt violate the Dpendency Inversion Principle
+    std::vector<User *> users; // ## when it doesnt violate the Dependency Inversion Principle
 };

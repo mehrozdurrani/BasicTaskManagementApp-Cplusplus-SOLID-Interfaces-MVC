@@ -15,6 +15,7 @@ void User::SetUserName(std::string userName)
 {
     this->userName = userName;
 }
+
 void User::SetUserId(int userId)
 {
     this->userId = userId;

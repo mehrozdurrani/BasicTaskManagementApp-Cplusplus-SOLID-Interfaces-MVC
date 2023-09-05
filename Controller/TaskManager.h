@@ -2,10 +2,8 @@
 
 class TaskManager : public ITaskManager
 {
-private:
-    /* data */
 public:
-    TaskManager(/* args */);
+    TaskManager();
     ~TaskManager();
 
     Task *CreateNewTask(int taskId, std::string title, std::string dueDate, std::string priority, std::string status) override;

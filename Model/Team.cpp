@@ -4,23 +4,27 @@
 Team::Team() {}
 Team::~Team() {}
 
-void Team::SetTeamName(std::string name)
+void Team::SetTeamId(int teamId)
 {
-    this->teamName = name;
+    this->teamId = teamId;
 }
-void Team::AddTeamMember(User *user)
+
+int Team::GetTeamId()
 {
-    this->users.push_back(user);
+    return this->teamId;
 }
-void Team::RemoveTeamMember(User *user)
+
+void Team::SetTeamName(std::string teamName)
 {
-    // For Removing the User from the team
+    this->teamName = teamName;
 }
-std::vector<User *> Team::GetTeamMembersList()
-{
-    return this->users;
-}
+
 std::string Team::GetTeamName()
 {
     return this->teamName;
+}
+
+std::vector<User *> Team::GetTeamMembersList()
+{
+    return this->users;
 }
